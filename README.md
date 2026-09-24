@@ -1,3 +1,5 @@
+
+
 # ZKP-Based FAT16 File System
 
 This project enhances the traditional FAT16 file system by integrating zero-knowledge proof (ZKP) techniques for secure file ownership, integrity verification, and privacy-preserving access control. It allows users to store encrypted files and verify their ownership and integrity without revealing the file's content. This system ensures robust data security, prevents unauthorized access, and counters tampering using cryptographic proofs.
@@ -59,6 +61,7 @@ This project enhances the traditional FAT16 file system by integrating zero-know
 
 1. **Initializing the File System**:
    - Initialize the FAT16 file system if not already available. All files will be handled in an encrypted format on top of this.
+   - The included `fat16gen-master` tool can generate a mountable FAT16 test image (`test.img`) by running `make` in its directory.
 2. **Adding Files**:
    - Files can be added to the system, and they will automatically be encrypted.
    - An integrity hash will be generated, and a ZKP proof will be created for ownership and integrity verification.
